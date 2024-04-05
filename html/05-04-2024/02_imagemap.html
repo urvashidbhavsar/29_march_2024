@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- image map means apply link in image some shape -->
+
+    <img src="images/image.jpg" alt="" usemap="#myimagemap">
+
+    <!-- apply image map -->
+    <map name="myimagemap">
+        <area shape="rect" coords="59,59,245,249" href="https://onlinenotepad.org/notepad" alt="notepad"
+            target="_blank">
+
+        <!-- x1 = 1112, y1 = 450 , x2 = 1177 
+               r= x2-x1 = 1177-1112 = 65 -->
+        <!-- x, y, r -->
+        <area shape="circle" coords="1112,450,65" href="https://en.wikipedia.org/wiki/Coffee" alt="" target="_blank">
+
+        <!-- <area shape="poly" coords="" href="" alt=""> -->
+        <area target="_blank" alt="myimage" title="myimage" href=""
+            coords="436,105,1032,106,977,304,975,636,486,636,488,297,436,105" shape="poly">
+
+    </map>
+</body>
+
+</html>
