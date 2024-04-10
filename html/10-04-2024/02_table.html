@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- table is a collection of rows and columns -->
+    <!-- 
+        for create table => <table>
+        for create row => <tr> table row 
+        for create column => <td> table data
+        for set table column heading => <th> table heading 
+        for set table body => <tbody>
+        for set table title => <caption>
+        for set table footer =< <tfoot>
+        for set table heading saparate => <thead>
+     -->
+    <!-- 
+        cellpadding => give a space between cell border and text
+        cellspacing => give a space between cells.
+        when we set rules all cellspacing not effected
+      -->
+
+    <table border="1" cellpadding="5px" cellspacing="10px" rules="all" style="width: 500px; text-align: center;">
+        <caption>My table data</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rohit</td>
+                <td>Manager</td>
+                <td>rohit@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Tanmay</td>
+                <td>Developer</td>
+                <td>Tanmay@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Richa</td>
+                <td>Marketing</td>
+                <td>richa@gmail.com</td>
+            </tr>
+        </tbody>
+        <!-- <tfoot>
+            <tr>
+                <td>My Data</td>
+            </tr>
+        </tfoot> -->
+    </table>
+</body>
+
+</html>
