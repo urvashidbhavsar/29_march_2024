@@ -1,0 +1,20 @@
+as per html layout there is 2 type of tag.
+
+(1) sementic tag 
+    => which is tell how to use and what content added.
+    like, <p>, <b>, <header>
+
+(2) non-sementic tag 
+    => which is can not tell to use.
+    like, <div> and <span> 
+
+for layout following tags are used : 
+<header>
+<footer>
+<section>
+<main>
+<nav> 
+<menu> 
+<div>
+<article>
+<aside>
