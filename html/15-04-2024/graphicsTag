@@ -1,0 +1,4 @@
+there are 2 graphics tags.
+
+(1) svg => scalable vector graphics => using html tag and css 
+(2) canvas => raster graphics but we set design using js 
