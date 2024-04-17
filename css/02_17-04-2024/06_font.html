@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title1 {
+            color: blue;
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* 400 is default(normal) also depend on font family*/
+            font-weight: 500;
+            font-style: italic;
+            font-variant: small-caps;
+        }
+
+        .p1 {
+            /* 1rem/em = 16px  */
+            font-size: 2rem;
+        }
+
+        .p2 {
+            /* 1vw = 14.4px => depend on screen width*/
+            font-size: 5vw;
+        }
+
+        .p3 {
+            /* 1vh = 10.8px => depend on screen height */
+            font-size: 10vh;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="title1">Hello World</p>
+    <p class="p1">rem font size</p>
+    <p class="p2">Viewport width (vw)</p>
+    <p class="p3">Viewport Height (vh)</p>
+</body>
+
+</html>
