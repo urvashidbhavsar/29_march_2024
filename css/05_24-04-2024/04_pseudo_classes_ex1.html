@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* pseudo classes are start with single colon (:) symbol */
+        .link1:link {
+            /*apply only unvisited */
+            color: blue;
+        }
+
+        .link1:any-link {
+            /*apply visited and unvisited */
+            color: blue;
+        }
+
+        .link2:active {
+            /* apply on <a> or <button> */
+            color: green;
+        }
+
+        .link3:visited {
+            color: darkgoldenrod;
+        }
+
+        .link4:hover {
+            /* apply on <a>, <button>, <div>, <img> etc */
+            color: orangered;
+        }
+
+        .btn {
+            /* top-bottom left-right */
+            padding: 20px 30px;
+            background-color: cadetblue;
+            color: white;
+            border: 1px solid cadetblue;
+            cursor: pointer;
+        }
+
+        .btn:active {
+            box-shadow: 0 0 2px black;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: cadetblue;
+        }
+
+        .btn:focus {
+            border: 2px solid black;
+        }
+
+        input {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="link1">click here</a>
+    <a href="#" class="link2">click here</a>
+    <a href="#" class="link3">click here</a>
+    <a href="#" class="link4">click here</a> <br><br>
+
+    <button class="btn">Hover Me!!!</button> <br><br>
+
+    <input type="text" name="" id="" placeholder="value">
+</body>
+
+</html>
