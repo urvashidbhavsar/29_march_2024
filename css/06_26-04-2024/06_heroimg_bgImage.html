@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .hero-banner {
+            background-image: url(https://digicult.it/wp-content/uploads/2018/02/Free-Desktop-Wallpaper-feature.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 200px 100px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* background-color: rgba(0, 0, 0, 0.475); */
+            background: linear-gradient(100deg, rgba(220, 20, 60, 0.5), rgb(255, 0, 255, 0.5));
+            /* opacity: 0.5; */
+            z-index: -1;
+        }
+
+        .hero-text {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 45px;
+            width: 50%;
+            margin: auto;
+            text-transform: capitalize;
+            color: white;
+        }
+
+        p {
+            font-size: 18px;
+            width: 70%;
+            margin: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: white;
+        }
+
+        input[type="text"] {
+            height: 33px;
+            width: 50%;
+            padding-left: 10px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            border: 1px solid transparent;
+        }
+
+        input[type="text"]:focus-visible {
+            outline: none;
+        }
+
+        button {
+            padding: 10.5px 20px;
+            background-color: rgb(238, 44, 141);
+            color: white;
+            border: 1px solid rgb(238, 44, 141);
+            cursor: pointer;
+        }
+
+        button:active {
+            box-shadow: 0 0 5px 2px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero-banner">
+        <div class="hero-text">
+            <h1>stand out from your competition</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim nulla sapiente, asperiores
+                autem, facere laudantium.
+            </p>
+            <div class="search">
+                <input type="text" name="" id="" placeholder="search">
+                <button>Search</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

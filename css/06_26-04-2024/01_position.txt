@@ -1,0 +1,7 @@
+position means how to show your element on webpage.
+
+position values are :
+static (default), fixed, sticky, relative, absolute
+
+properties are used when we apply fixed, sticky, relative and absolute :
+(1) top, (2) left, (3) bottom, (4) right (5) z-index  
