@@ -1,0 +1,11 @@
+(1) descendent selector 
+    use space between two classes, element or id 
+
+(2) child selector 
+    use > symbol 
+
+(3) adjacent selector
+    use + symbol
+
+(4) sibling selector
+    use ~ symbol
