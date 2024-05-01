@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .mydiv {
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+
+        .box:nth-child(odd) {
+            background-color: cadetblue;
+        }
+
+        .box:nth-child(even) {
+            background-color: cyan;
+        }
+
+        .box:nth-child(1) {
+            /* grow value as par parent element space */
+            flex-grow: 1;
+            /* cover overflow element  */
+            flex-shrink: 1;
+            /* how much base add in grow value */
+            flex-basis: 10%;
+        }
+
+        .box:nth-child(2) {
+            /* grow shrink basis */
+            flex: 1 1 0%;
+        }
+
+        .box:nth-child(3) {
+            flex: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

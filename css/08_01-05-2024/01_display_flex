@@ -1,0 +1,20 @@
+flex value means set flexible element in a row.
+
+list of property which is only effected while appling flex.
+flex apply always in parent element. so effect show in child element.
+
+1. flex-grow (child)
+2. flex-shrink (child)
+3. flex-basis (child)
+4. flex (child)
+5. flex-direction (parent)
+6. flex-wrap (parent)
+7. flex-flow (parent)
+8. gap => row-gap, column-gap (parent)
+9. justify-content (parent)
+10. align-items (parent)
+11. align-content (parent)
+12. place properties
+
+justify property => horizontal effect
+align property => vertical effect

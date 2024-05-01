@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 550px;
+            width: 400px;
+            border: 1px solid black;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+            /* this property depend on flex-wrap=> wrap, wrap-reverse */
+            align-content: center;
+        }
+
+        .div {
+            height: 150px;
+            width: 150px;
+            background-color: teal;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <div class="div">1</div>
+        <div class="div">2</div>
+        <div class="div">3</div>
+    </div>
+</body>
+
+</html>

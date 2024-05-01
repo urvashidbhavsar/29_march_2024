@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            border: 1px solid black;
+            display: flex;
+            /* when child element overflow in parent row then apply */
+
+            /* flex-wrap: nowrap;=> default */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex-direction: row; => default */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column */
+            /* flex-direction: column-reverse; */
+
+            flex-flow: row-reverse wrap;
+        }
+
+        .div1,
+        .div2,
+        .div3 {
+            height: 70px;
+            width: 50%;
+            font-size: 30px;
+        }
+
+        .div1 {
+            background-color: chartreuse;
+        }
+
+        .div2 {
+            background-color: chocolate;
+        }
+
+        .div3 {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+    </div>
+</body>
+
+</html>
