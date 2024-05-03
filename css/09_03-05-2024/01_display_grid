@@ -1,0 +1,17 @@
+grid gives you table form data.
+
+list of property which is only effected while apply display grid
+
+1. grid-template-rows 
+2. grid-template-columns 
+3. gap => row-gap, column-gap 
+4. grid-row => grid-row-start, grid-row-end 
+5. grid-column => grid-column-start, grid-column-end 
+6. grid-area 
+7. grid-template-areas 
+8. justify-items 
+9. justify-content 
+10. justify-self 
+11. align-items 
+12. align-self 
+13. place properties 

@@ -1,0 +1,99 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    /* set for every element height and width properly */
+    box-sizing: border-box;
+}
+
+/* ======================================common css ===================== */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.margin-lr {
+    margin-left : 70px;
+    margin-right: 70px;
+}
+
+/* ==================================================================== */
+.topheader {
+    background-color: rgb(4, 4, 82);
+}
+
+.topheader .padd-tb {
+    padding: 14px 0;
+}
+
+.topheader .contact-us {
+    display        : flex;
+    justify-content: space-between;
+}
+
+.topheader .contact-us a {
+    color: white;
+}
+
+.topheader .contact-us .connet {
+    display: flex;
+    gap    : 30px;
+}
+
+.topheader .contact-us .social-media {
+    display: flex;
+}
+
+.topheader .contact-us .social-media .icon {
+    height         : 35px;
+    width          : 35px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.topheader .contact-us .social-media .icon:hover {
+    background-color: white;
+}
+
+.topheader .contact-us .social-media .icon:hover a {
+    color: rgb(4, 4, 82);
+}
+
+/* =================================================================== */
+header {
+    background-color: rgb(4, 4, 82);
+}
+
+header .tb-padd {
+    padding: 20px 0;
+}
+
+header .navbar {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+header .navbar a {
+    color: white;
+}
+
+header .navbar li.active {
+    background-color: rgb(194, 193, 193);
+}
+
+header .navbar .nav ul {
+    display: flex;
+    gap    : 30px;
+}
+
+header .navbar .nav ul li {
+    padding: 10px;
+}
