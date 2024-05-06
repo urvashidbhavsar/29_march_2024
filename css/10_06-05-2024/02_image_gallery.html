@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .image-gallery {
+            padding: 50px;
+            background-color: #f8e7cf;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        img {
+            height: auto;
+            width: 100%;
+            vertical-align: middle;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .img1 {
+            grid-row: 1 / span 2;
+        }
+
+        .img1 img {
+            height: 100%;
+        }
+
+        .img2 img {
+            height: 312px;
+
+        }
+
+        .img9 img {
+            height: 312px;
+        }
+
+        .img2 {
+            grid-column: 2 / span 2;
+        }
+
+        .img9 {
+            grid-column: 3 / span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-gallery">
+        <div class="img1">
+            <img src="https://images.pexels.com/photos/3139497/pexels-photo-3139497.jpeg?cs=srgb&dl=pexels-achraf210-3139497.jpg&fm=jpg"
+                alt="">
+        </div>
+        <div class="img2">
+            <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
+                alt="">
+        </div>
+        <div class="img3">
+            <img src="https://th.bing.com/th/id/OIG3.5u5ZBGkvLQn1ELp4UqXH" alt="">
+        </div>
+        <div class="img4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfMdc9Ct7fPMc60BizHHTM1FkYd7mZvadpJI3VqifcuqqJjBgBK6lCZ4R0Oqn1Qcamz0E&usqp=CAU"
+                alt="">
+        </div>
+        <div class="img5">
+            <img src="https://th.bing.com/th/id/OIG4.LgUj9FIjzUbdTSMn0mRg" alt="">
+        </div>
+        <div class="img6">
+            <img src="https://deepai.org/static/images/cyberpunkdolphin.png" alt="">
+        </div>
+        <div class="img7">
+            <img src="https://avatars.mds.yandex.net/i?id=3042e48e6070e46c0fc785a5a4dd10db-5235616-images-taas-consumers&n=27&h=480&w=480"
+                alt="">
+        </div>
+        <div class="img8">
+            <img src="https://www.lib.uchicago.edu/efts/ARTFL/projects/mckee/Images/gavarni-reduced2.jpg" alt="">
+        </div>
+        <div class="img9">
+            <img src="https://plus.unsplash.com/premium_photo-1673306778968-5aab577a7365?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww"
+                alt="">
+        </div>
+    </div>
+</body>
+
+</html>
