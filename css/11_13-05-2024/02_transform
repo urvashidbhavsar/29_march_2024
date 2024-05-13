@@ -1,0 +1,16 @@
+how your element is transform.
+
+(1) rotate => rotate(), rotateX(), rotateY(), rotateZ(), rotate3d()
+
+(2) scale (zooming) => scale(), scaleX(), scaleY(), scaleZ(), scale3d()
+
+(3) skew (streching) => skew(), skewX(), skewY()
+
+(4) translate (movement) => translate(), translateX(), translateY(), translateZ(), translate3d()
+
+(5) perspective (view) => perspective()
+
+(6) matrix => matrix() => 2*3, 
+        matrix3d() 4*4
+
+        => https://ramlmn.github.io/visualizing-matrix3d/
