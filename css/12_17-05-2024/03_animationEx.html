@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            padding: 20px 40px;
+            font-size: 25px;
+            text-transform: capitalize;
+            background-color: #9a0aab;
+            border: 2px solid transparent;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: movebtn .5s ease infinite alternate;
+        }
+
+        /* .btn:hover {} */
+
+        .btns {
+            width: 200px;
+
+        }
+
+        .btns .shadow {
+            padding: 20px 40px;
+            margin: auto;
+            width: 80px;
+            background-color: #80808045;
+            border-radius: 50%;
+            transform: rotateX(73deg) translateY(-34px);
+        }
+
+        .shadow {
+            animation: shadowmove .5s ease infinite alternate;
+        }
+
+        /* .btn:active {
+            transform: scale(0.9);
+        } */
+
+        @keyframes movebtn {
+            from {
+                transform: translateY(0px);
+            }
+
+            to {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes shadowmove {
+            from {
+                width: 80px;
+            }
+
+            to {
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btns">
+        <button class="btn">click here</button>
+        <div class="shadow"></div>
+    </div>
+</body>
+
+</html>

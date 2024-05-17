@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: movediv;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            /* effected when set delay or direction */
+            animation-fill-mode: both;
+        }
+
+        /* create an animation */
+        @keyframes movediv {
+            from {
+                transform: translate(0);
+            }
+
+            to {
+                transform: translate(300px, 300px) rotate(360deg);
+                background-color: cadetblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv"></div>
+</body>
+
+</html>
