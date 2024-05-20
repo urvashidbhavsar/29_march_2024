@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .mydiv {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            margin: 100px;
+        }
+
+        .btn {
+            height: 100px;
+            width: 100px;
+            background-color: rgba(6, 121, 125, 0.674);
+            animation: setborder 5s linear infinite;
+            box-shadow: 0px 0px 5px #98989c;
+        }
+
+        i {
+            position: absolute;
+            left: 35px;
+            top: 35px;
+            font-size: 30px;
+            color: white;
+        }
+
+        @keyframes setborder {
+            0% {
+                border-radius: 0;
+            }
+
+            50% {
+                border-radius: 55px 100px 30px 26px;
+            }
+
+            100% {
+                border-radius: 10px;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <div class="btn" role="button"></div>
+        <i class="fa-solid fa-arrow-right"></i>
+    </div>
+</body>
+
+</html>

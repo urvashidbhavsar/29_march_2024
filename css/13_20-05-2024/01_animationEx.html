@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .set_piller {
+            height: 250px;
+            width: 250px;
+            margin: 150px auto;
+            overflow: hidden;
+        }
+
+        .setLoading {
+            /* display: flex; */
+            /* justify-content: space-between; */
+            /* align-items: end; */
+            position: relative;
+        }
+
+        .piller {
+            position: absolute;
+            height: 100px;
+            width: 40px;
+        }
+
+        .piller1 {
+            top: 150px;
+            left: 30px;
+            background: linear-gradient(skyblue, blue);
+            animation: moveDiv 0.7s ease infinite alternate;
+        }
+
+        .piller2 {
+            top: 150px;
+            left: 80px;
+            background: linear-gradient(150deg, skyblue, blue);
+            animation: moveDiv 0.4s ease infinite alternate;
+        }
+
+        .piller3 {
+            top: 150px;
+            left: 130px;
+            background: linear-gradient(250deg, skyblue, blue);
+            animation: moveDiv 0.6s ease infinite alternate;
+        }
+
+        .piller4 {
+            top: 150px;
+            left: 180px;
+            background: linear-gradient(350deg, skyblue, blue);
+            animation: moveDiv 0.5s ease infinite alternate;
+
+        }
+
+        @keyframes moveDiv {
+            0% {
+                transform: scaleY(1);
+            }
+
+            100% {
+                transform: scaleY(2);
+            }
+        }
+
+        h1 {
+            transform: translateY(-130px);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="set_piller">
+        <div class="setLoading">
+            <div class="piller1 piller"></div>
+            <div class="piller2 piller"></div>
+            <div class="piller3 piller"></div>
+            <div class="piller4 piller"></div>
+        </div>
+    </div>
+    <h1>Loading....</h1>
+</body>
+
+</html>
