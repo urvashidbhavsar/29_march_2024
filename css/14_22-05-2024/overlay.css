@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.imagegrid {
+    margin               : 50px;
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap                  : 30px;
+}
+
+img {
+    height        : auto;
+    max-width     : 100%;
+    vertical-align: middle;
+}
+
+a {
+    color          : white;
+    text-decoration: none;
+}
+
+/* =================================================== */
+.overlay1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay1 .text {
+    position           : absolute;
+    overflow           : hidden;
+    /* top             : 0; */
+    bottom             : 0;
+    left               : 0;
+    right              : 0;
+    background-color   : rgba(0, 0, 0, 0.7);
+    display            : grid;
+    place-content      : center;
+    height             : 0;
+    width              : 100%;
+    transition         : 0.5s ease height;
+}
+
+.overlay1:hover .text {
+    height: 100%;
+}
+
+/* ================================= */
+.overlay2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay2 .text {
+    position                 : absolute;
+    overflow                 : hidden;
+    top                      : 0;
+    bottom                   : 0;
+    left                     : 0;
+    /* right                 : 0; */
+    background-color         : rgba(0, 0, 0, 0.7);
+    display                  : grid;
+    place-content            : center;
+    height                   : 100%;
+    width                    : 0;
+    transition               : 0.5s ease width;
+}
+
+.overlay2:hover .text {
+    width: 100%;
+}
+
+/* ------------------------------------------------------ */
+.overlay3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay3 .text {
+    position     : absolute;
+    overflow     : hidden;
+    top          : 0;
+    bottom       : 0;
+    left         : 0;
+    right        : 0;
+    display      : grid;
+    place-content: center;
+    height       : 100%;
+    width        : 100%;
+    scale        : 0;
+    transition   : 0.5s ease all;
+    border-radius: 50%;
+}
+
+.overlay3:hover .text {
+    background-color: rgba(0, 0, 0, 0.7);
+    scale           : 1;
+    rotate          : 360deg;
+    border-radius   : 0;
+}
+
+.overlay3 .delay {
+    /* transform : rotateX(90deg); */
+    transform : translateX(-500px);
+    transition: 0.5s ease all;
+}
+
+.overlay3:hover .delay {
+    transition-delay      : 1s;
+    /* scale              : 1; */
+    /* transform          : rotateX(0deg); */
+    transform             : translateX(0);
+}

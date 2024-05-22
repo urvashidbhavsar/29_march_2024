@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+            padding: 10px;
+            margin: 30px;
+            transition: 1s ease;
+            backface-visibility: hidden;
+            /* backface-visibility: visible; => default */
+        }
+
+        .mydiv:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">My Div</div>
+</body>
+
+</html>
