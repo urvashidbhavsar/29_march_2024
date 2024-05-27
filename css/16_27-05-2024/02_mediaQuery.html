@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: white;
+        }
+
+        /* 
+            breakpoint =
+            mobile device, leptop, tablet
+            max-width:576px, 
+            min-width:576px,
+            min-width:768px,
+            min-width:992px,
+            min-width:1200px = 1140px 
+            min-width:1400px 
+        */
+        @media (max-width:576px) {
+            p {
+                background-color: salmon;
+            }
+        }
+
+        @media (min-width:576px) {
+            p {
+                background-color: brown;
+            }
+        }
+
+        @media (min-width:768px) {
+            p {
+                background-color: cadetblue;
+            }
+        }
+
+        @media (min-width:992px) {
+            p {
+                background-color: burlywood;
+            }
+        }
+
+        @media (min-width:1200px) {
+            p {
+                background-color: coral;
+            }
+        }
+
+        @media (min-width:1400px) {
+            p {
+                background-color: darkcyan;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias asperiores, quae accusantium consequatur numquam
+        tempora sapiente debitis neque quis? Velit voluptate, aliquid ipsum illum soluta commodi at excepturi ab magni!
+    </p>
+</body>
+
+</html>

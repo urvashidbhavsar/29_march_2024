@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 10px 30px;
+            cursor: pointer;
+        }
+
+        .btn {
+            background-color: transparent;
+            border: 2px solid indigo;
+            color: indigo;
+            transition: 0.5s ease background-color;
+        }
+
+        .btn:hover {
+            background-color: indigo;
+            color: white;
+        }
+
+        .btn:active {
+            scale: 0.9;
+        }
+
+        .btn1 {
+            border: 2px solid #054d05;
+            background-color: transparent;
+            color: #054d05;
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn1::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #054d05;
+            transform: scale(0);
+            /* transform: scaleX(0); */
+            /* transform: scaleY(0); */
+            /* transform-origin: top; */
+            transform-origin: 0% 0%;
+            transition: 0.5s ease all;
+            z-index: -1;
+        }
+
+        .btn1:hover::after {
+            transform: scale(1);
+        }
+
+        .btn1:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://codepen.io/afa34/pen/VwzxmNN -->
+    <button class="btn">Click Here</button>
+    <br><br>
+
+    <button class="btn1">click here</button>
+</body>
+
+</html>
