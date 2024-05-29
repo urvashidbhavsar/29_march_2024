@@ -1,0 +1,45 @@
+// complusory 
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+// create variables for colors, padding and margins 
+$indigo-1     :#591589;
+$pink-1       :#a102b0;
+$white-1      :white;
+$black-1      :black;
+$gray-light-1 :#c0c0c0;
+$padd-y-1     :10px 0;
+$padd-y-2     :20px 0;
+$padd-y-3     :30px 0;
+$padd-y-4     :40px 0;
+$padd-1       :10px;
+$padd-2       :20px;
+$padd-3       :30px;
+$padd-4       :40px;
+
+// common css 
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Bubblegum Sans", sans-serif;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
