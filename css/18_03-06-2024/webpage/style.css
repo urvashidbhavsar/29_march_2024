@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bubblegum Sans", sans-serif;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-full {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.btn {
+  padding: 15px 30px;
+  border: 1px solid #a102b0;
+  transition: 0.2s ease background-color;
+  font-size: 18px;
+  border-radius: 40px;
+  background: linear-gradient(#a102b0, #df752e);
+  color: white;
+  cursor: pointer;
+}
+
+header {
+  box-shadow: 0 2px 5px #c0c0c0;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  gap: 20px;
+}
+header .navbar .logo {
+  flex-grow: 0.4;
+  flex-basis: 0;
+}
+header .navbar .nav {
+  flex-grow: 1;
+  flex-basis: 50%;
+}
+@media (max-width: 576px) {
+  header .navbar .nav {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  header .navbar .nav {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  header .navbar .nav {
+    display: flex;
+  }
+}
+header .navbar .nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .navbar .nav ul li {
+  padding: 20px 10px;
+}
+header .navbar .nav ul li a {
+  color: black;
+}
+header .navbar .contact {
+  flex-grow: 1;
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+header .navbar .contact a {
+  color: black;
+}
+header .navbar .menubtn {
+  display: none;
+}
+@media (max-width: 576px) {
+  header .navbar .menubtn {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 30%;
+    justify-content: end;
+  }
+}
+@media (min-width: 576px) {
+  header .navbar .menubtn {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 50%;
+    justify-content: end;
+  }
+}
+@media (min-width: 1200px) {
+  header .navbar .menubtn {
+    display: none;
+  }
+}
+
+.homepage .home-container {
+  display: flex;
+}
+.homepage .home-container .content {
+  flex: 1;
+  padding: 60px 80px;
+}
+.homepage .home-container .content .title {
+  border: 1px solid #a102b0;
+  font-size: 13px;
+  color: #591589;
+  padding: 10px;
+  border-radius: 40px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.homepage .home-container .content h1 {
+  font-size: calc(2.5vw + 30px);
+  padding: 20px 0;
+}
+.homepage .home-container .content p {
+  padding-bottom: 10px;
+}
+.homepage .home-container .bg-image {
+  flex: 1;
+  background: url(https://www.cio.com/wp-content/uploads/2024/04/two_people_review_information_on_a_tablet_in_an_office_workspace_collaboration_communication_planning_strategy_tactics_teamwork_by_gorodenkoff_shutterstock_1682600950_2400x1600-100890810-orig-1.jpg?quality=50&strip=all) no-repeat center;
+  background-size: cover;
+  -webkit-clip-path: ellipse(50% 68% at 67% 51%);
+          clip-path: ellipse(50% 68% at 67% 51%);
+}/*# sourceMappingURL=style.css.map */
