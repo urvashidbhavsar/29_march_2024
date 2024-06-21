@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            padding: 5px;
+            margin: 5px;
+            border-bottom: 2px solid red;
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var val = 10;
+        // before ES6
+        document.write("<div class='mydiv'> I have a &#8377;", val, "</div>");
+
+        document.write("<div class='mydiv'> I have a &#8377;" + val + "</div>");
+
+        // after ES6
+        document.write(`<div class='mydiv'> I have a &#8377;${val} </div>`)
+    </script>
+</body>
+
+</html>
