@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // arithmatic
+
+        var n1 = 34, n2 = 34, res, select = 1;
+        document.write(`<div>1st number : ${n1}</div>`)
+        document.write(`<div>2nd number : ${n2}</div>`)
+
+        document.write("<div>-------------------------</div>")
+
+        switch (select) {
+            case 1:
+                res = n1 + n2;
+                document.write(`Addition is : ${res}`)
+                break;
+            case 2:
+                res = n1 - n2;
+                document.write(`Subtract is : ${res}`)
+                break;
+            case 3:
+                res = n1 * n2;
+                document.write(`Multiply is : ${res}`)
+                break;
+            case 4:
+                res = n1 / n2;
+                document.write(`Division is : ${res}`)
+                break;
+            case 5:
+                res = n1 % n2;
+                document.write(`Modules is : ${res}`)
+                break;
+            default:
+                document.write("wrong select");
+                break;
+        }
+
+    </script>
+</body>
+
+</html>
