@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="alert('Hello User')">click here</button>
+
+    <script>
+        // simple function, without arg
+        function msg() {
+            document.write("<p>Welcome User, to learn Js</p>");
+        }
+
+        msg();
+        msg();
+        msg();
+
+        // with argument 
+        function display(mymsg) {
+            document.write(`<div><i>${mymsg}</i></div>`)
+        }
+
+        display(123);
+        display("Hello User")
+        display("Welcome")
+    </script>
+</body>
+
+</html>
