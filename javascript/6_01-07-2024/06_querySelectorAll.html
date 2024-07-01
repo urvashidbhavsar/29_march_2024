@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            gap: 10px;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- class selection -->
+    <div class="main">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+    <h1>Hello world</h1>
+    <h2>Hello world</h2>
+    <h3>Hello world</h3>
+
+    <div class="parent">
+        parent Element
+
+        <div class="child">
+            child element
+        </div>
+        <div class="child">
+            child element
+        </div>
+    </div>
+
+    <script>
+        var bx = document.querySelectorAll(".box");
+        for (let i = 0; i < bx.length; i++) {
+            bx[i].style.backgroundColor = "tomato"
+        }
+
+        var text = document.querySelectorAll("h1,h2,h3");
+        for (let i = 0; i < text.length; i++) {
+            text[i].style.fontSize = "30px"
+            text[i].style.backgroundColor = "teal"
+            text[i].style.color = "white"
+        }
+
+        var p = document.querySelectorAll(".parent .child");
+        p[0].style.fontFamily = "Arial"
+    </script>
+</body>
+
+</html>

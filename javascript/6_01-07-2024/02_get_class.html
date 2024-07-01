@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            gap: 10px;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <script>
+        // document.body.style.backgroundColor
+        var b = document.getElementsByClassName("box");
+        for (let i = 0; i < b.length; i++) {
+            b[i].style.backgroundColor = "teal";
+            b[i].innerHTML = i + 1
+        }
+    </script>
+</body>
+
+</html>

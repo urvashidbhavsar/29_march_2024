@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title {
+            font-size: 40px;
+            color: white;
+            background-color: rgb(15, 76, 76);
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn" onclick="setClass()">set class</button>
+
+    <h1 id="head" class="head">Hello world</h1>
+
+    <script>
+        function setClass() {
+            let h1 = document.getElementById("head")
+            if (h1.className == "head") {
+                h1.className = "title"
+            } else {
+                h1.className = "head"
+            }
+        }
+    </script>
+</body>
+
+</html>
