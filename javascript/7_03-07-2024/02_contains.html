@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myimg {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="toggleCss()">Toggle</button>
+    <button onclick="checkClass()">Contains</button>
+
+    <hr>
+    <img src="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg" alt="">
+
+    <script>
+        function toggleCss() {
+            let image = document.querySelector("img");
+            image.classList.toggle("myimg")
+        }
+
+        function checkClass() {
+            let image = document.querySelector("img");
+            if (image.classList.contains("myimg") == true) {
+                alert("class exist")
+            } else {
+                alert("class not exist")
+            }
+        }
+    </script>
+</body>
+
+</html>

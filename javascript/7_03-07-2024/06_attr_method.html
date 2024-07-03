@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 400px;
+        }
+
+        .myimgstyle {
+            border: 5px solid red;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="setImage()">set Attribute</button>
+    <button onclick="removeAttr()">remove Attribute</button>
+    <button onclick="getAttr()">Get Attribute</button>
+
+    <hr>
+    <img src="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg" alt="" id="myimg">
+
+    <script>
+        function setImage() {
+            let img = document.getElementById("myimg");
+            // img.setAttribute("width", "400px")
+            img.setAttribute("class", "myimgstyle")
+        }
+        function removeAttr() {
+            let img = document.getElementById("myimg");
+            // img.removeAttribute("width")
+            img.removeAttribute("class");
+        }
+        function getAttr() {
+            let img = document.getElementById("myimg");
+            var getval = img.getAttribute("src")
+            alert(getval)
+        }
+    </script>
+</body>
+
+</html>

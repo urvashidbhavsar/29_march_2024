@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            border: 1px solid gray;
+            padding: 3px 5px;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+
+        .error {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <input type="text" placeholder="Firstname" id="firstname">
+        <input type="text" placeholder="MiddleName" id="middlename">
+        <input type="text" placeholder="LastName" id="lastname">
+        <button onclick="return userValue()">Add</button>
+    </form>
+    <div>Full name is : <span id="f_msg"></span>
+        <span id="m_msg"></span>
+        <span id="l_msg"></span>
+    </div>
+
+    <script>
+        function userValue() {
+            let fname = document.getElementById("firstname");
+            let mname = document.getElementById("middlename");
+            let lname = document.getElementById("lastname");
+            if (fname.value == "" || fname.value == null) {
+                // alert("Enter name")
+                fname.classList.add("error");
+                fname.focus()
+            } else if (mname.value == "" || mname.value == null) {
+                mname.classList.add("error");
+                mname.focus()
+            } else if (lname.value == "" || lname.value == null) {
+                lname.classList.add("error");
+                lname.focus()
+            }
+            else {
+                document.getElementById("f_msg").innerHTML = fname.value;
+                document.getElementById("m_msg").innerHTML = mname.value; document.getElementById("l_msg").innerHTML = lname.value;
+                document.getElementById("firstname").value = ""
+                document.getElementById("middlename").value = ""
+                document.getElementById("lastname").value = ""
+                fname.classList.remove("error");
+                mname.classList.remove("error")
+                lname.classList.remove("error")
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>

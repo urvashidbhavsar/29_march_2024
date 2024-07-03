@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="addValue()">Add in list</button>
+    <ul id="list">
+        <li>List 1</li>
+    </ul>
+
+    <script>
+        function addValue() {
+            let li = document.createElement("li");
+            let list_text = document.createTextNode("this is my new list");
+            li.append(list_text);
+            document.getElementById("list").appendChild(li)
+        }
+    </script>
+</body>
+
+</html>

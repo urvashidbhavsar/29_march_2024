@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: decimal;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <input type="text" name="" id="userinput">
+        <button onclick="return todoList()">Add in list</button>
+    </form>
+
+    <ul id="list"></ul>
+
+    <script>
+        function todoList() {
+            let user = document.getElementById("userinput");
+            let li = document.createElement("li");
+            let li_text = document.createTextNode(user.value);
+            li.append(li_text);
+            document.getElementById("list").appendChild(li);
+            document.getElementById("userinput").value = ""
+
+            return false
+        }
+    </script>
+</body>
+
+</html>

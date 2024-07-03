@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 100px;
+            width: 100px;
+            background-color: coral;
+            border: 2px solid black;
+        }
+
+        .mydiv1 {
+            height: 100px;
+            width: 100px;
+            background-color: turquoise;
+            border: 2px dashed red;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="setCss()">add css</button>
+    <button onclick="removeCss()">remove css</button>
+    <button onclick="toggleCss()">Toggle css</button>
+    <hr>
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+    <script>
+        function setCss() {
+            let d = document.getElementById("div1")
+            d.classList.add("mydiv");
+        }
+        function removeCss() {
+            let d = document.getElementById("div1")
+            d.classList.remove("mydiv")
+        }
+        function toggleCss() {
+            let d1 = document.getElementById("div2")
+            d1.classList.toggle("mydiv1")
+        }
+    </script>
+</body>
+
+</html>
