@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">click here</button>
+
+    <script>
+        let b = document.getElementById("btn");
+        b.addEventListener("click", () => {
+            alert("hello")
+        })
+
+        // without function keyword create a function for addition.
+        var sum = (a, b) => {
+            console.log(a + b);
+        }
+        let val = (...num) => {
+            console.log(num);
+        }
+        sum(5, 5)
+        sum(23, 3)
+        sum(12, 2, 2)
+
+        val(34, 2, 3)
+        val(34, 2, 3, 55)
+        val(34, 2, 3, 55, 2, 33)
+    </script>
+</body>
+
+</html>

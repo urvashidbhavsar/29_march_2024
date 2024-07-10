@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log(Number.MAX_SAFE_INTEGER);
+        console.log(Number.MAX_VALUE);
+        console.log(Number.MIN_SAFE_INTEGER);
+        console.log(Number.MIN_VALUE);
+
+        var x = 23, y = 45.55;
+
+        console.log(Number.isFinite(x));
+        console.log(Number.isFinite(y));
+
+        console.log(Number.isInteger(x));
+        console.log(Number.isInteger(y));
+
+        console.log(Number.parseFloat(x));
+        console.log(Number.parseFloat(y));
+
+        console.log(Number.parseInt(x));
+        console.log(Number.parseInt(y));
+
+        console.log(x.toExponential());
+        console.log(y.toExponential());
+
+        console.log(x.toFixed(6));
+        console.log(y.toFixed(6));
+
+        console.log(x.toPrecision(6));
+        console.log(y.toPrecision(6));
+    </script>
+</body>
+
+</html>

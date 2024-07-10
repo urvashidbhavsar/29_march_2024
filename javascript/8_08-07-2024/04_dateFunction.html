@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doument</title>
+    <style>
+        p {
+            font-size: 35px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+
+    <script>
+        let dt = new Date()
+
+        document.getElementById("p1").innerHTML = dt;
+
+        document.getElementById("p2").innerHTML = `${dt.getDate()}-${dt.getMonth() + 1}-${dt.getFullYear()}`
+
+        document.getElementById("p3").innerHTML = `${dt.getHours()}:${dt.getMinutes()}:${dt.getSeconds()}`
+
+        document.getElementById("p4").innerHTML = dt.getDay();
+    </script>
+</body>
+
+</html>
