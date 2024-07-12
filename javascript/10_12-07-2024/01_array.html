@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .set {
+            color: navy;
+            text-transform: capitalize;
+            border-bottom: 1px solid saddlebrown;
+            padding: 2px;
+        }
+
+        .newset {
+            color: darkmagenta;
+            text-transform: capitalize;
+            border-bottom: 1px solid salmon;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var colors = ["red", "yellow", "green", "magenta", "teal", "black"];
+        document.write(colors);
+        console.log(colors);
+
+        // single value print from array
+        console.log(colors[0]);
+        console.log(colors[5]);
+
+        // print array using loop
+        let clr;
+        for (clr of colors) {
+            document.write(`<div class='set'>${clr}</div>`)
+        }
+
+        // using loop
+        colors.forEach(color => {
+            document.write(`<div class='newset'>${color}</div>`)
+        });
+
+        // for loop 
+        for (let i = 0; i < colors.length; i++) {
+            document.write(`<div class='set'>${i + 1} => ${colors[i]}</div>`)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            font-size: 20px;
+            font-family: sans-serif;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        img {
+            height: 150px;
+            width: 150px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tbody class="title">
+            <tr>
+                <th>No</th>
+                <th>Categories</th>
+                <th>Type</th>
+                <th>Material</th>
+                <th>Image</th>
+                <th>Price</th>
+            </tr>
+        </tbody>
+        <tbody id="data"></tbody>
+    </table>
+    <script>
+        var cloths = [
+            {
+                No: 1,
+                Categories: "top",
+                Type: "short",
+                Material: "cotton",
+                Img: "https://fashiondream.co.in/cdn/shop/files/033-063A9654.jpg?v=1696422010&width=533",
+                Price: 500,
+            },
+            {
+                No: 2,
+                Categories: "saree",
+                Type: "full",
+                Material: "satin",
+                Img: "https://cdn.shopify.com/s/files/1/1762/5129/files/multi-color-saree-for-indian-women.jpg?v=1654655251",
+                Price: 1000,
+            }
+        ]
+        let tableData = document.getElementById("data");
+        for (let i = 0; i < cloths.length; i++) {
+            tableData.innerHTML += `
+            <tr>
+                <td>${cloths[i].No}</td>
+                <td>${cloths[i].Categories}</td>
+                <td>${cloths[i].Type}</td>
+                <td>${cloths[i].Material}</td>
+                <td><img src=${cloths[i].Img} alt="${cloths[i].Img}"></td>
+                <td>&#8377;${cloths[i].Price}</td>
+            </tr>`;
+        }
+
+    </script>
+</body>
+
+</html>

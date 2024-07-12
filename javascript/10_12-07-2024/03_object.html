@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var person = {
+            firstname: "urvashi",
+            lastname: "Bhavsar",
+            address: "surat",
+            mobileno: 1234567890,
+        }
+        document.write(person);
+        console.log(person);
+
+        // to print single object value.
+        document.write(`<div>Firstname : ${person.firstname} </div>`)
+        document.write(`<div>Lastname : ${person.lastname} </div>`)
+        document.write(`<div>Address : ${person.address} </div>`)
+        document.write(`<div>Mobile No : ${person.mobileno} </div>`)
+
+        // print using loop 
+        let p;
+        for (p in person) {
+            if (Object.hasOwnProperty.call(person, p)) {
+                document.write(`<div style="color:red">${person[p]}</div>`)
+            }
+        }
+    </script>
+</body>
+
+</html>

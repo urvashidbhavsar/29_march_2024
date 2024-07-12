@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main" class="main"></div>
+
+    <script>
+        let myimg = ["img1.jpg", "img2.jpeg", "img3.jpeg", "img4.jpg", "img5.webp", "img6.webp"];
+
+        var maindiv = document.getElementById("main");
+        for (let i = 0; i < myimg.length; i++) {
+            maindiv.innerHTML += `
+            <div>
+                <img src="images/${myimg[i]}" alt="">
+            </div>`;
+            console.log(myimg[i]);
+        }
+    </script>
+</body>
+
+</html>
