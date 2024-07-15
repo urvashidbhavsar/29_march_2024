@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .setup {
+            border: 2px solid black;
+            padding: 20px;
+            width: fit-content;
+            margin: 90px auto;
+        }
+
+        .row {
+            display: grid;
+            gap: 20px;
+            justify-items: center;
+        }
+
+        input[type="text"] {
+            height: 30px;
+            width: 300px;
+            padding: 5px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            border: 1px solid gray;
+        }
+
+        input[type="text"]:focus-visible {
+            outline: none;
+        }
+
+        button {
+            background-color: saddlebrown;
+            color: white;
+            border: 1px solid transparent;
+            padding: 10px 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px black;
+            cursor: pointer;
+        }
+
+        span {
+            color: red;
+            padding-left: 5px;
+            padding-top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="setup">
+        <form action="#">
+            <div class="row">
+                <div class="field">
+                    <input type="text" name="" id="username" placeholder="Enter name" onblur="return checkName()"
+                        onkeyup="return checkNamePtn()">
+                    <div>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+                <div class="field">
+                    <button onclick="return checkName()">Check</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function checkName() {
+            let user = document.getElementById("username");
+            if (user.value == "" || user.value == null) {
+                document.getElementById("msg").innerHTML = "Enter name!!"
+            }
+            return false;
+        }
+
+        function checkNamePtn() {
+            let user = document.getElementById("username");
+            let ptn = /^[a-zA-Z.\s]*$/;
+            if (!ptn.test(user.value)) {
+                document.getElementById("msg").innerHTML = "Invalid Value!!!"
+            } else if (user.value.length < 6) {
+                document.getElementById("msg").innerHTML = "Enter atleast 6 character";
+            } else {
+                document.getElementById("msg").innerHTML = null
+            }
+            return false
+        }
+    </script>
+</body>
+
+</html>
