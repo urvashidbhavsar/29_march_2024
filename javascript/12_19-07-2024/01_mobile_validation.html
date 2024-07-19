@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .setup {
+            border: 2px solid black;
+            padding: 20px;
+            width: fit-content;
+            margin: 90px auto;
+        }
+
+        .row {
+            display: grid;
+            gap: 20px;
+            justify-items: center;
+        }
+
+        input[type="text"] {
+            height: 30px;
+            width: 300px;
+            padding: 5px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            border: 1px solid gray;
+        }
+
+        input[type="text"]:focus-visible {
+            outline: none;
+        }
+
+        button {
+            background-color: saddlebrown;
+            color: white;
+            border: 1px solid transparent;
+            padding: 10px 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px black;
+            cursor: pointer;
+        }
+
+        span {
+            color: red;
+            padding-left: 5px;
+            padding-top: 3px;
+        }
+
+        .error {
+            border: 1px solid red !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="setup">
+        <form action="#">
+            <div class="row">
+                <div class="field">
+                    <input type="text" name="" id="mobileno" placeholder="Enter mobile no" onblur="return checkNo()"
+                        onkeyup="return checkMobile()" maxlength="10">
+                    <div>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+                <div class="field">
+                    <button onclick="return checkNo()">Check</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function checkNo() {
+            let mobile = document.getElementById("mobileno");
+            if (mobile.value == "" || mobile.value == null) {
+                document.getElementById("msg").innerHTML = "Enter No"
+                mobile.classList.add("error");
+                mobile.focus()
+            }
+            return false;
+        }
+        // regEx
+        function checkMobile() {
+            let mobile = document.getElementById("mobileno");
+            let ptn = /^[0-9]*$/, startNo = /^[6-9]/;
+
+            if (!ptn.test(mobile.value) || !startNo.test(mobile.value)) {
+                document.getElementById("msg").innerHTML = "Invalid Number!!"
+                mobile.classList.add("error");
+            } else if (mobile.value.length < 10) {
+                document.getElementById("msg").innerHTML = "Enter 10 digits"
+                mobile.classList.add("error");
+            } else {
+                document.getElementById("msg").innerHTML = null;
+                mobile.classList.remove("error");
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>
