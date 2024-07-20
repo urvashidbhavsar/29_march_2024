@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .setup {
+            border: 2px solid black;
+            padding: 20px;
+            width: 350px;
+            margin: 90px auto;
+        }
+
+        .row {
+            display: grid;
+            gap: 20px;
+            justify-items: center;
+        }
+
+        input[type="text"],
+        [type="password"] {
+            height: 30px;
+            width: 300px;
+            padding: 5px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            border: 1px solid gray;
+        }
+
+        input[type="text"]:focus-visible,
+        [type="password"]:focus-visible {
+            outline: none;
+        }
+
+        button {
+            background-color: saddlebrown;
+            color: white;
+            border: 1px solid transparent;
+            padding: 10px 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px black;
+            cursor: pointer;
+        }
+
+        span {
+            color: red;
+            padding-left: 5px;
+            padding-top: 3px;
+        }
+
+        .error {
+            border: 1px solid red !important;
+        }
+
+        input[type="checkbox"] {
+            accent-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="setup">
+        <form action="#">
+            <div class="row">
+                <div class="field">
+                    <input type="text" name="firstname" id="firstname" placeholder="Enter Firstname"
+                        onblur="return checkBlank('firstname', 'msg1')" onkeyup="return checkName('firstname', 'msg1')">
+                    <div>
+                        <span id="msg1"></span>
+                    </div>
+                </div>
+                <div class="field">
+                    <input type="text" name="middlename" id="middlename" placeholder="Enter Middlename"
+                        onblur="return checkBlank('middlename', 'msg2')"
+                        onkeyup="return checkName('middlename', 'msg2')">
+                    <div>
+                        <span id="msg2"></span>
+                    </div>
+                </div>
+                <div class="field">
+                    <input type="text" name="lastname" id="lastname" placeholder="Enter Lastname"
+                        onblur="return checkBlank('lastname', 'msg3')" onkeyup="return checkName('lastname', 'msg3')">
+                    <div>
+                        <span id="msg3"></span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function checkBlank(input, msg) {
+            let name = document.getElementById(input);
+            if (name.value == "" || name.value == null) {
+                document.getElementById(msg).innerHTML = "Enter value";
+                name.classList.add("error")
+            }
+            return false;
+        }
+
+        // patterns
+        function checkName(input, msg) {
+            let name = document.getElementById(input),
+                ptn = /^[a-zA-Z]*$/;
+            if (!ptn.test(name.value)) {
+                document.getElementById(msg).innerHTML = "Invalid value!!!";
+                name.classList.add("error")
+            } else {
+                document.getElementById(msg).innerHTML = null;
+                name.classList.remove("error")
+            }
+            return false
+        }
+    </script>
+</body>
+
+</html>
