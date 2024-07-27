@@ -1,0 +1,107 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin   : auto;
+    padding  : 0 10px;
+}
+
+/* ====================================== */
+header {
+    position     : fixed;
+    top          : 0;
+    width        : 100%;
+    /* transition: 0.5s ease; */
+}
+
+.headerSet {
+    background-color: rgb(54, 54, 54);
+    animation       : moveHeader 0.5s ease-in-out;
+}
+
+@keyframes moveHeader {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+header .navbar {
+    padding        : 15px 0;
+    display        : flex;
+    align-items    : center;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+}
+
+header .navbar .logo {
+    color: white;
+}
+
+header .navbar .menubtn button {
+    height          : 35px;
+    width           : 35px;
+    background-color: transparent;
+    border          : 2px solid white;
+    color           : white;
+    font-size       : 17px;
+}
+
+.nav {
+    width           : 25%;
+    box-shadow      : 0 0 5px black;
+    background-color: white;
+    position        : fixed;
+    top             : 0;
+    left            : -30%;
+    overflow        : auto;
+    height          : 100vh;
+    transition      : .5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    ;
+    padding: 50px 20px;
+}
+
+.nav ul {
+    display   : grid;
+    text-align: center;
+    gap       : 20px;
+}
+
+.nav ul li {
+    padding: 10px;
+}
+
+.nav ul a {
+    color    : black;
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+}
+
+/* ********************************** */
+/* make a random class with any name for show nav  */
+/* .nav-show {} */
+.nav-show {
+    left: 0;
+}
