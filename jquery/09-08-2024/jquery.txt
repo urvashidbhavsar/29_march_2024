@@ -1,0 +1,8 @@
+it is js library.
+
+    syntax :
+$(document).ready(function () {
+    $("selector").event(function () {
+        $("selector").jquery_method();
+    })
+})

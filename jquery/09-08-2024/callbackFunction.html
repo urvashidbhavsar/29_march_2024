@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">click here</button>
+    <hr>
+    <div></div>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $("div").hide(2000, function () {
+                    // alert("task completed")
+                    $("div").show(2000)
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
