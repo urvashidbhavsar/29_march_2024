@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- three method : text, html, value -->
+    <button id="btn1">text</button>
+    <button id="btn2">html</button>
+    <button id="btn3">value</button>
+    <hr>
+
+    <p id="p1">
+        <i>Hello world</i>
+    </p>
+    <input type="text" name="" id="" value="abv">
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                alert($("#p1").text())
+            })
+            $("#btn2").click(function () {
+                alert($("#p1").html())
+            })
+            $("#btn3").click(function () {
+                alert($("input").val())
+            })
+        })
+    </script>
+</body>
+
+</html>

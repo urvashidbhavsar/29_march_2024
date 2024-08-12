@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <button id="btn1">text</button>
+    <button id="btn2">html</button>
+    <button id="btn3">value</button>
+    <hr>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <input type="text" name="" id="" readonly disabled>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#p1").text("<u>Hello world</u>")
+            })
+            $("#btn2").click(function () {
+                $("#p2").html("<u>Hello world</u>")
+            })
+            $("#btn3").click(function () {
+                $("input").val("Hello")
+            })
+        })
+    </script>
+</body>
+
+</html>

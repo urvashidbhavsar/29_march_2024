@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: auto;
+            width: 300px;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 30px;
+            background-color: aqua;
+        }
+
+        .box1 {
+            height: auto;
+            width: 300px;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 30px;
+            background-color: maroon;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <button id="btn1">addClass</button>
+    <button id="btn2">removeClass</button>
+    <button id="btn3">toggleClass</button>
+    <button id="btn4">hasClass</button>
+    <hr>
+    <div class="mydiv">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur aliquam natus rerum dolor, blanditiis
+        laboriosam dolorum laudantium debitis voluptatem non minima sed cumque consequatur quisquam culpa dicta a
+        mollitia distinctio?
+    </div>
+    <div class="mydiv1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum vitae nihil autem molestiae et quisquam
+        dolorum. Cum, eveniet libero aliquid, unde ipsa aspernatur consequuntur deserunt blanditiis praesentium, cumque
+        numquam?
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".mydiv").addClass("box");
+            })
+            $("#btn2").click(function () {
+                $(".mydiv").removeClass("box");
+            })
+            $("#btn3").click(function () {
+                $(".mydiv1").toggleClass("box1");
+            })
+            $("#btn4").click(function () {
+                if ($(".mydiv1").hasClass("box1")) {
+                    alert("class exist")
+                } else {
+                    alert("class not exist")
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

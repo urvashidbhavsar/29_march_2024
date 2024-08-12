@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <button id="btn1">set attribute</button>
+    <button id="btn2">remove attribute</button>
+    <button id="btn3">get attribute</button>
+
+    <hr>
+    <input type="text" name="" id="" placeholder="Enter value">
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("input").attr("disabled", "true")
+            })
+            $("#btn2").click(function () {
+                $("input").removeAttr("disabled")
+            })
+
+            $("#btn3").click(function () {
+                alert($("input").attr("placeholder"))
+            })
+        })
+    </script>
+</body>
+
+</html>
