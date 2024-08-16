@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            margin: 0;
+        }
+
+        .mydiv {
+            width: fit-content;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- wrap, wrapInner, wrapAll, unwrap -->
+    <button id="btn1">wrap</button>
+    <button id="btn2">unwrap</button>
+    <hr>
+
+    <p class="p1">this is first para</p>
+    <p class="p1">this is first para</p>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".p1").wrap("<div class='mydiv'></div>")
+            })
+            $("#btn2").click(function () {
+                $(".p1").unwrap()
+            })
+        })  
+    </script>
+
+    <button id="btn3">wrapInner</button>
+    <hr>
+    <p class="p2">this is first para</p>
+    <p class="p2">this is first para</p>
+
+    <script>
+        $(function () {
+            $("#btn3").click(function () {
+                $(".p2").wrapInner("<b></b>")
+            })
+        })
+    </script>
+
+    <button id="btn4">wrapAll</button>
+    <hr>
+    <p class="p3">this is first para</p>
+    <p class="p3">this is first para</p>
+
+    <script>
+        $(function () {
+            $("#btn4").click(function () {
+                $(".p3").wrapAll("<div class='mydiv'></div>")
+            })
+        })
+    </script>
+</body>
+
+</html>

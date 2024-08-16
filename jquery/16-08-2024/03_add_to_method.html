@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- appendTo, prependTo, insertBefore, insertAfter , these functions are used to shifting values. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <button class="btn1">Append to</button>
+    <button class="btn2">Prepend to</button>
+    <button class="btn3">insert Before</button>
+    <button class="btn4">insert After</button>
+    <hr>
+    <b>Welcome</b>
+    <h1>Hello user</h1>
+
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $("b").appendTo("h1")
+            })
+            $(".btn2").click(function () {
+                $("b").prependTo("h1")
+            })
+            $(".btn3").click(function () {
+                $("b").insertBefore("h1")
+            })
+            $(".btn4").click(function () {
+                $("b").insertAfter("h1")
+            })
+        })
+
+    </script>
+</body>
+
+</html>

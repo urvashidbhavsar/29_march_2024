@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- append, prepend, before, after, these functions are used to add element -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <button class="btn1">Append</button>
+    <button class="btn2">Prepend</button>
+    <button class="btn3">Before</button>
+    <button class="btn4">After</button>
+
+    <ul>
+        <li>List 1</li>
+    </ul>
+
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $("ul").append("<li>New List</li>")
+            })
+            $(".btn2").click(function () {
+                $("ul").prepend("<li>New List</li>")
+            })
+            $(".btn3").click(function () {
+                $("ul").before("<li>New List</li>")
+            })
+            $(".btn4").click(function () {
+                $("ul").after("<li>New List</li>")
+            })
+        })
+
+    </script>
+</body>
+
+</html>

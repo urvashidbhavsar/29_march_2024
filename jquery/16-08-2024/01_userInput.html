@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <form action="#">
+        <label for="">Enter name : </label>
+        <input type="text" name="" id="input">
+
+        <br>
+        <br>
+        <button id="btn">add value</button>
+    </form>
+    <p>You entered : <span id="msg"></span></p>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                let inp = $("#input").val();
+                if (inp == "") {
+                    alert("Enter value")
+                } else {
+                    $("#msg").html(`<b>${inp}</b>`)
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
