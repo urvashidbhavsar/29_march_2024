@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bxslider css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.css">
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .bx-wrapper {
+            border: none !important;
+        }
+
+        .slider1 {
+            background: url(https://images.pexels.com/photos/220769/pexels-photo-220769.jpeg?cs=srgb&dl=pexels-pixabay-220769.jpg&fm=jpg) no-repeat center/cover;
+        }
+
+        .slider2 {
+            background: url(https://wallpapergod.com/images/hd/high-resolution-1920X1080-wallpaper-q5nufpp5n7urf2cm.jpeg) no-repeat center/cover;
+        }
+
+        .slider3 {
+            background: url(https://images.pexels.com/photos/417344/pexels-photo-417344.jpeg?cs=srgb&dl=pexels-pixabay-417344.jpg&fm=jpg) no-repeat center/cover;
+        }
+
+        .slider4 {
+            background: url(https://coreldrawdesign.com/resources/previews/preview-happy-love-emoji-3d-wallpaper,-download-free-amazing-high-resolution-backgrounds-images-1636367175.jpg) no-repeat center/cover;
+        }
+
+        .slider {
+            padding: 250px 100px;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            color: white;
+            text-shadow: 0 0 10px black;
+        }
+
+        .bx-wrapper .bx-pager {
+            bottom: 14px;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            background: red;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.js"></script>
+
+    <div class="homeslider">
+        <div class="slider slider1">
+            <h1>Image 1</h1>
+        </div>
+        <div class="slider slider2">
+            <h1>Image 2</h1>
+        </div>
+        <div class="slider slider3">
+            <h1>Image 3</h1>
+        </div>
+        <div class="slider slider4">
+            <h1>Image 4</h1>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.homeslider').bxSlider({
+                // mode: 'fade',
+                speed: 1500
+            });
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        div,
+        h1,
+        p {
+            border: 1px solid black;
+            margin: 30px;
+        }
+
+        .add {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <button id="btn">Click</button>
+    <hr>
+    <div class="main"> Main
+        <div class="sub"> Sub
+            <h1>About us</h1>
+            <div class="text"> text
+                <p>My Text</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                // $(".sub").children(".text").addClass("add");
+                $(".sub").find("p").addClass("add");
+            })
+        })
+    </script>
+</body>
+
+</html>

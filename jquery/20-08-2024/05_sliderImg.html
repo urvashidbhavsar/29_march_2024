@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bxslider css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.css">
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .bx-wrapper {
+            border: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.js"></script>
+
+    <div class="homeslider">
+        <div class="slider">
+            <img src="https://images.pexels.com/photos/220769/pexels-photo-220769.jpeg?cs=srgb&dl=pexels-pixabay-220769.jpg&fm=jpg"
+                alt="">
+        </div>
+        <div class="slider">
+            <img src="https://wallpapergod.com/images/hd/high-resolution-1920X1080-wallpaper-q5nufpp5n7urf2cm.jpeg"
+                alt="">
+        </div>
+        <div class="slider">
+            <img src="https://images.pexels.com/photos/417344/pexels-photo-417344.jpeg?cs=srgb&dl=pexels-pixabay-417344.jpg&fm=jpg"
+                alt="">
+        </div>
+        <div class="slider">
+            <img src="https://coreldrawdesign.com/resources/previews/preview-happy-love-emoji-3d-wallpaper,-download-free-amazing-high-resolution-backgrounds-images-1636367175.jpg"
+                alt="">
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.homeslider').bxSlider({
+                // mode: 'fade',
+                speed: 1500
+            });
+        })
+    </script>
+</body>
+
+</html>
