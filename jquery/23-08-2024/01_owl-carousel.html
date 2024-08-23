@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <style>
+        img {
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <div class="owl-carousel owl-theme">
+        <div class="img">
+            <img src="https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022_640.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="https://images.pexels.com/photos/1003757/pexels-photo-1003757.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="">
+        </div>
+        <div class="img">
+            <img src="https://t4.ftcdn.net/jpg/06/22/69/19/360_F_622691912_UqnMQAWYxUGeXBmzg2CFUdCCx6MVyG0B.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_640.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="https://cdn.pixabay.com/photo/2017/10/10/07/48/hills-2836301_640.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_1280.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_1801,h_954/https://assets.ubuntu.com/v1/622b4fe1-numpy-numbat-on-dell-xps-13.jpg"
+                alt="">
+        </div>
+        <div class="img">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/033/130/401/small/elephant-wallpaper-elephant-hd-elephant-images-download-ai-generated-photo.jpg"
+                alt="">
+        </div>
+        <div class="img">
+            <img src="https://img.freepik.com/free-photo/lake-mountains_1204-502.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="https://cdn.pixabay.com/photo/2023/08/20/16/46/flower-8202753_640.jpg" alt="">
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                dotsEach: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                smartSpeed: 1000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 2
+                    },
+                    768: {
+                        items: 3
+                    },
+                    992: {
+                        items: 4
+                    },
+                    1200: {
+                        items: 5
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

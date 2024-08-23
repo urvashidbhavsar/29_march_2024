@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- ajax = asynchronised JavaScript and XML 
+        load data without reload whole page. 
+    -->
+    <button id="btn1">load data</button>
+
+    <h1 id="mytext"></h1>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("h1").load("text.txt")
+            })
+        })
+    </script>
+</body>
+
+</html>
